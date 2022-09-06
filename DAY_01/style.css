@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #4449A4 0%, #4CB1C4 60%);
+    border-radius: 10px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+.hundred{
+    position: relative;
+    height: 121px;
+    width: 60%;
+    /* margin-bottom: 10px; */
+    /* border: 1px solid black; */
+}
+.one_1{
+    position: absolute;
+    height: 48px;
+    width: 24px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 11px 1px rgb(0 0 0 / 25%);
+    background: white;
+    transform: rotate(48deg);
+    z-index: 0;
+}
+.one_2{
+    position: absolute;
+    height: 121px;
+    width: 24px;
+    background: white;
+    top: 0%;
+    left: 7%;
+    border-radius: 4px;
+    box-shadow: 1px 1px 11px 1px rgb(0 0 0 / 25%);
+    z-index: 5;
+}
+.zero_1{
+    position: absolute;
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+    border: 24px solid #fff;
+    box-shadow: 1px 1px 11px 1px rgb(0 0 0 / 25%);
+    left: 12%;
+    top: 4%;
+    z-index: 3;
+}
+.zero_2{
+    position: absolute;
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+    border: 24px solid #fff;
+    box-shadow: 1px 1px 11px 1px rgb(0 0 0 / 25%);
+    left: 53%;
+    top: 4%;
+}
+.big{
+  position: relative;
+  z-index: 20;
+  display: block;
+  font-size: 82px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 6px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.small {
+    position: relative;
+    z-index: 20;
+    display: block; 
+    font-size: 23px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .04em;
+  }
+
+/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
