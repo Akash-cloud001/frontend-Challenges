@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day_02 Menu Icon</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="menuIcon" onclick="myfunc()">
+            <div id="d1" class="comman one-rev"></div>
+            <div id="d2" class="comman two-rev"></div>
+            <div id="d3" class="comman three-rev"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function myfunc(){
+  
+            $("#d1").toggleClass("one one-rev");
+            $("#d2").toggleClass("two two-rev");
+            $("#d3").toggleClass("three three-rev");
+
+        }
+    </script>
+</body>
+</html>

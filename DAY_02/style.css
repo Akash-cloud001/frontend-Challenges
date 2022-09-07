@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #c90194 0%, #ff556f 40%, #ffc4d2);
+    border-radius: 10px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.menuIcon{
+    position: relative;
+    height: 50px;
+    width: max-content;
+    margin-inline:auto;
+    /* border: 1px solid black; */
+    cursor: pointer;
+}
+.comman{
+    border: 4px solid white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+    position: relative;
+    margin-top: 10%;
+    width: 55px;
+    border-radius: 10px;
+    top: 0%;
+    background-color: white;
+}
+.comman:nth-child(2){
+    width: 30px;
+}
+.one{  
+    animation: line1 500ms ease-in  normal forwards;
+}
+.two{
+    animation: line2 250ms ease-in  normal forwards;
+}
+.three{
+    animation: line3 500ms ease  normal forwards;
+}
+
+/* Animation Forwards */
+@keyframes line1{
+    0%{
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    50%{
+        top: 28%;
+    }
+    100%{
+        top: 28%;
+        transform: rotate(45deg);
+    }
+}
+@keyframes line2{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes line3{
+    0%{
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    50%{
+        top: -27%;
+    }
+    100%{
+        top: -27%;
+        transform: rotate(135deg);
+    }
+}
+
+/* Animation backwards */
+.one-rev{  
+    animation: line1-rev 250ms ease-in  reverse forwards;
+}
+.two-rev{
+    animation: line2-rev 250ms ease-in  reverse forwards;
+}
+.three-rev{
+    animation: line3-rev 250ms ease-in  reverse forwards;
+}
+@keyframes line1-rev{
+    0%{
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    50%{
+        top: 28%;
+    }
+    100%{
+        top: 28%;
+        transform: rotate(45deg);
+    }
+}
+@keyframes line2-rev{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes line3-rev{
+    0%{
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    50%{
+        top: -27%;
+    }
+    100%{
+        top: -27%;
+        transform: rotate(135deg);
+    }
+}
