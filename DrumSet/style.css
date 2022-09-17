@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url(nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color: white;
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 10%;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.keys{
+    margin-top: 16px;
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 20px;
+    font-size: 15px;
+    border: 2px double #00ffd840;
+    padding: 2px;
+    background-color: #1b1a1aac;
+    border-radius: 10px;
+    transition: border-color 200ms,scale 200ms,box-shadow 200ms,background-color 200ms;
+    cursor: grab;
+}
+.playing{
+    border-color:#00ffd840;
+    scale: 1.1;
+    box-shadow: 0 0 10px #00ffd840;
+    cursor: grabbing;
+    background-color:#1b1a1a ;
+}
+.sound{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+footer{
+    position: absolute;
+    bottom: 5%;
+    color: white;
+}
+a{
+    color: white;
+}
