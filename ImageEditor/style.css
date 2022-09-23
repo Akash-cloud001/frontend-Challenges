@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color : #d497d4;
+    --blur : 0px; 
+    --space : 0px;
+}
+body{
+    min-height: 100vh;
+    width: 95%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.color-effect{
+    color: var(--color);
+}
+.tool-container{
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tools{
+    height: 100px;
+    width: 200px;
+    float: left;
+}
+input{
+    margin-top: 10px;
+    display: block;
+}
+input[type=range]{
+    height: 1px;
+}
+#img-container{
+    height: 400px;
+    width: 60%;
+}
+#img-container > img{
+    height: 100%;
+    width: 100%;
+    filter: blur(var(--blur)); 
+    object-fit: cover;
+    border: var(--space)  solid var(--color);
+     /*var need to set usign js  */
+}

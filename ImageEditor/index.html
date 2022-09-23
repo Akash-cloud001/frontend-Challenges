@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Image Editor</title>
+</head>
+<body>
+    
+    <div class="tool-container">
+        <h1>Image-<span class="color-effect">Editor</span>
+        </h1>
+        <div class="tools">
+            <label>Spacing</label>
+            <input type="range" min="0" max="100" value="0" data-sizing="px" name="space" id="space">
+        </div>
+        <div class="tools">
+            <label>Blur</label>
+            <input type="range" min="0" max="25" value="0" data-sizing="px" name="blur" id="blur-tool">
+        </div>
+        <div class="tools">
+            <label>Color</label>
+            <input type="color" name="color" value="#d497d4" id="color-tool">
+        </div>
+    </div>
+    <figure id="img-container">
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="img">
+    </figure>
+</body>
+</html>
