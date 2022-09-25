@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.panels{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+}
+.panel{
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: flex .5s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+                font-size .5s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+                background 0.2s;
+}
+.panel > *{
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+.panel>*:first-child{transform: translateY(-100%);}
+.panel.open-active >*:first-child{transform: translateY(0);}
+.panel>*:last-child{transform: translateY(100%);}
+.panel.open-active >*:last-child{transform: translateY(0);}
+
+.panel.open{
+    flex-grow: 5;
+    font-size: 2rem;
+}
+
+.panel p{
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    color: #fff;
+    text-shadow: 0 0 4px rgb(0 0 0 / 72%), 0 0 14px rgb(0 0 0 / 45%);
+    font-size: 1.5rem;
+}
+
+.panel:nth-child(1){
+    background: url("../ImageGallery/img/Anime\ Original\ 2560\ x\ 1440.jpg");
+    background-position: right;
+}
+.panel:nth-child(2){
+    background: url("../ImageGallery/img/Anime\ Original\ 3840\ x\ 2160\ \(5\).png");
+}
+.panel:nth-child(3){
+    background: url("../ImageGallery/img/Anime\ Original\ 5261\ x\ 3000.png");
+    background-position: center;
+}
+.panel:nth-child(4){
+    background: url("../ImageGallery/img/Anime\ Original\ 5261\ x\ 3000.png");    
+}
+.panel:nth-child(5){
+    background: url("../ImageGallery/img/Anime\ Original\ 1920\ x\ 1080.png");    
+}
+
+
