@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20px;
+    background: #f0d9f0;
+}
+h2{
+    margin-top:2%;
+}
+#dogImageRandom,#dogDetailsBreedWise{
+    height: 90vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#fetchBtn,#getBreedImg{
+    height: 40px;
+    width: 75px;
+    font-size: larger;
+    border-radius: 6px;
+    background: #d497d4;
+    cursor: grab;
+    font-weight: bold;
+}
+#fetchBtn:active,#getBreedImg:active{
+    background: #b580b5;
+    cursor: grabbing;
+}
+.img-container,.container{
+    height: 400px;
+    width: 400px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+}
+.img-container > img,#dog-breed-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.breedContain{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+select{
+    font-size:1.1rem ;
+}
