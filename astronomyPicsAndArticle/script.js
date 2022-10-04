@@ -3,7 +3,7 @@
 // APOD
 function getAPOD(){
     $.ajax({
-        url: 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY',
+        url: 'https://api.nasa.gov/planetary/apod?api_key=ed2drvv8bF07tSc7rBiysdNgPSFltxnUgldYPoen',
         method: 'GET',
         success: (data)=>{
             $('#apodTitle').text(data.title);
@@ -21,9 +21,6 @@ $('#date').datepicker({
     dateFormat: "yy-mm-dd"
 });
 
-// $('marsBtn').on(()=>{
-//     $('#imgContainer').empty();
-// })
 $('#marsBtn').click(()=>{
     const currDate = $('#date').val();
     console.log(typeof(currDate));
@@ -33,7 +30,7 @@ $('#marsBtn').click(()=>{
             method: 'GET',
             data: {
                 earth_date: currDate,
-                api_key: 'DEMO_KEY'
+                api_key: 'ed2drvv8bF07tSc7rBiysdNgPSFltxnUgldYPoen'
             },
             success: (data)=>{
                 const gallery = data.photos;
