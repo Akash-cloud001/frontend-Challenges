@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/344/nebula.png" type="image/x-icon">
+        
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src = " https://code.jquery.com/ui/1.12.1/jquery-ui.js "></script>
+    <script src="script.js" defer></script>
+    <title>AstroBlog</title>
+</head>
+<body>
+    
+    <section class="apod">
+        <h2 class="heading">Astronomy Pic of the Day</h2>
+        <h4 id="apodTitle">
+
+        </h4>
+        <article id="apodArticle">
+            
+        </article>
+        <figure>
+            <img id="apodImg" src="" alt="img">
+        </figure>
+        <a id="apodAnchor" href="" target="_blank" download>
+            <p>Click to download</p>
+        </a>
+    </section>
+    <section>
+        <h2 class="heading">
+            Mars Rover Photos
+        </h2>
+        <div class="dateBtn">
+            <input type="text" name="date" id="date" placeholder="Enter Date">
+            <button type="submit" id="marsBtn">fetch</button>
+        </div>
+        <div id="imgContainer">
+            
+        </div>
+    </section>
+
+</body>
+</html>
